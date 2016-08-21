@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h1>calculator</h1>
+		<form action="" onsubmit="javascript: calculator(); return false;">
+			<label for="parameter1">Input1:</label>
+			<input id="parameter1" type="text" onchange="javascript: calculator();" onkeyup="javascript:calculator();" value="">
+			<label for="parameter2">Input2:</label>
+			<input id="parameter2" type="text" onchange="javascript: calculator();" onkeyup="javascript:calculator();" value="">
+			<select id="operator" onchange="javascript: calculator();">
+				<option value="addition">addition</option> 
+				<option value="substraction">substraction</option>
+				<option value="division">division</option>
+				<option value="multiplication">multiplication</option>
+			</select>
+			<input type="submit" value="submit">
+		</form>
+
+		<p id="result"></p>
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
